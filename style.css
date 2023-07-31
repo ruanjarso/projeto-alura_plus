@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-segundario: #C0C0C0;
+    --azul-botao: #167BF7;
+    --cor-de-fundo: #00030C;
+
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+*{/*reset do layout*/
+    margin: 0;
+    padding: 0;
+} 
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+}
+
+.principal{
+    background-image: url("imagens/Background.png");
+    background-repeat: no-repeat; /*pra não repetir a imagem de fundo*/
+    background-size: contain; /*pra preencher todo o container que é a "section"*/
+    align-items: center; /*alinhando os intens no meio em sentido horizontal ao grid*/
+    text-align: center; /*alinhamento dos elementos ao centro no sentido vertical, masmo tendo a imagem!*/
+}
+
+.container{
+    height: 100vh;
+    display: grid;/*vai separar cada elemento dentro do container*/
+    grid-template-columns: 50% 50%; /*vai separar por coluna, os 50% é pra ser só a metade*/
+    
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0; /*aqui estamos definindo respectivamente o espaço da imagem pro topo, pra direita, para baixo e para a esquerda!*/
+    
+}
+
+.container__botao{
+    background-color: var(--azul-botao);
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-size: 1rem;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 1em;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.botao__segundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: #C0C0C0;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.segundario__iamgem{
+    width: 80%;
+}
+
+.descricao__titulo{
+    color: var(--branco-principal);
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+    color: var(--cinza-segundario);
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.segundario__botao{
+    display: inline-block; /*pra ocupar só o espaço do botão e não do blçoco inteiro*/
+    margin-top: 1em;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /*tira os pontos que fica em caeda item na lista*/
+    margin: 5em 0;
+}
+
+.lista__item{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape{
+    text-align: center;
+    margin: 10em 0 2em 0;
+}
+
+.rodape__lista{
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+    justify-content: center;
+    margin: 3em 0;
+}
+
+.links__rodape{
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-size:16px;
+}
+
+.rodape__texto{
+    font-size: 14px;
+    color: var(--cinza-segundario);
+    text-align: center;
+    margin: 2em 10em;
+}
